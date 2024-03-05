@@ -1,0 +1,80 @@
+body {
+    margin : 0 auto;
+    width: 1440px;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    margin : 0 auto;
+    position : relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slider {
+    height: 80%;
+    width : 100%;
+    position: absolute;
+    z-index: 5;
+    transition: all 2s ease-in-out;
+}
+
+.slider img {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+}
+
+.head{
+    font-size: 100px;
+    color: white;
+}
+
+.hide {
+    font-size: 100px;
+    color: white;
+    position: relative;
+    bottom: 10%;
+    left: 40%;
+    z-index: 10;
+    transition: all 1s ease-in-out;
+}
+
+
+.visible{
+    font-size: 100px;
+    color: white;
+    position: relative;
+    bottom: 70%;
+    left: 40%;
+    z-index: 10;  
+    transition: all 1s ease-in-out;
+}
+.prev-btn {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left : 0;
+    font-size: 68px;
+    color: #24b3ff;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.next-btn{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    right : 0;
+    font-size: 68px;
+    color: #24b3ff;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
