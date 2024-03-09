@@ -16,7 +16,7 @@ main{
 }
 
 .slider {
-    height: 80%;
+    height: 100%;
     width : 100%;
     position: absolute;
     z-index: 5;
@@ -29,7 +29,14 @@ main{
     height: 100%;
     width: 100%;
 }
-
+.visibleDiv{
+    height: 80vh;
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+    bottom: 70%;
+    left: 40%;
+}
 .head{
     font-size: 100px;
     color: white;
@@ -38,9 +45,9 @@ main{
 .hide {
     font-size: 100px;
     color: white;
-    position: relative;
-    bottom: 10%;
-    left: 40%;
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
     z-index: 10;
     transition: all 1s ease-in-out;
 }
@@ -49,12 +56,13 @@ main{
 .visible{
     font-size: 100px;
     color: white;
-    position: relative;
-    bottom: 70%;
-    left: 40%;
+    position: absolute;
+    bottom: 50%;
+    left: 0%;
     z-index: 10;  
     transition: all 1s ease-in-out;
 }
+
 .prev-btn {
     position: absolute;
     z-index: 10;
